@@ -1,0 +1,47 @@
+{
+  "verification_24241dfe-194a-4022-8700-05a784d66d2e": {
+    "user_id": "38c86772-dcc8-4a55-8d5e-cd4170dcd613",
+    "signature_type": "parent",
+    "verification_id": "24241dfe-194a-4022-8700-05a784d66d2e",
+    "date_verified": "2025-10-27T23:26:38.138801",
+    "results": [
+      {
+        "filename": "signature_1",
+        "is_authentic": true,
+        "confidence": 0.8732415437698364
+      },
+      {
+        "filename": "signature_2",
+        "is_authentic": true,
+        "confidence": 0.8732486963272095
+      },
+      {
+        "filename": "signature_3",
+        "is_authentic": true,
+        "confidence": 0.8732755184173584
+      },
+      {
+        "filename": "signature_4",
+        "is_authentic": true,
+        "confidence": 0.8732722401618958
+      },
+      {
+        "filename": "signature_5",
+        "is_authentic": true,
+        "confidence": 0.8732621669769287
+      },
+      {
+        "filename": "signature_6",
+        "is_authentic": true,
+        "confidence": 0.8732484579086304
+      },
+      {
+        "filename": "signature_7",
+        "is_authentic": true,
+        "confidence": 0.873254656791687
+      }
+    ],
+    "all_authentic": true,
+    "flagged_indices": []
+  }
+}
