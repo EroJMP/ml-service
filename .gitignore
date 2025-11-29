@@ -17,7 +17,9 @@ dist/
 build/
 
 # ML Models (usually large files)
+# Ignore all .h5 files except the main model
 *.h5
+!cnn_sign_model.h5
 *.pkl
 *.joblib
 *.pt
