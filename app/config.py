@@ -9,7 +9,18 @@ if env_path.exists():
 
 # API Configuration
 API_HOST = os.getenv("API_HOST", "0.0.0.0")
-API_PORT = int(os.getenv("API_PORT", "8000"))
+
+# Handle PORT from various platforms (Render, Railway, etc. use PORT)
+# Also handle case where PORT might be set to literal '$PORT' string
+port_value = os.getenv("PORT") or os.getenv("API_PORT", "8000")
+# If port_value is the literal '$PORT' string, use default
+if port_value == "$PORT":
+    port_value = "8000"
+try:
+    API_PORT = int(port_value)
+except (ValueError, TypeError):
+    API_PORT = 8000
+
 DEBUG = os.getenv("DEBUG", "True").lower() in ('true', '1', 't')
 
 # CORS Settings - Allow our Next.js app
